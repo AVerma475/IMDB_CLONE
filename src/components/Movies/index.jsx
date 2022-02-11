@@ -12,7 +12,6 @@ const Movies = () => {
   const add = (movie) => {
     let arr = [...fav, movie];
     setFav([...arr]);
-    console.log(arr);
     localStorage.setItem("imdb", JSON.stringify(arr));
   };
 

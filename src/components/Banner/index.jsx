@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import Image from "../../assets/banner.jpeg";
 
 const Banner = () => {
   const [movies, setMovies] = useState({});
@@ -11,7 +10,7 @@ const Banner = () => {
         .get(
           `https://api.themoviedb.org/3/trending/movie/week?api_key=c5f44ff0e872f9a0876567d85bf9767f&page=1`
         )
-        .then((res) => setMovies(res.data.results[0])),
+        .then((res) => setMovies(res.data.results[1])),
     []
   );
   return (

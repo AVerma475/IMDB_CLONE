@@ -12,7 +12,7 @@ const NavBar = () => {
         Movies
       </Link>
       <Link
-        to={"/Favourites"}
+        to={"/favourites"}
         className="text-blue-400 font-bold text-xl md:text-3xl"
       >
         Favourites

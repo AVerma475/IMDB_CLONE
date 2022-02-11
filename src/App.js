@@ -4,7 +4,7 @@ import Movies from "./components/Movies";
 import NavBar from "./components/NavBar";
 import Pagination from "./components/Pagination";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Favourites from "./components/Favourites";
+import Favourites from "./components/Favourites/index";
 
 const App = () => {
   return (

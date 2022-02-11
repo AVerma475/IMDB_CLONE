@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useEffect, useState } from "react";
+
 import Pagination from "../Pagination";
 import upArrow from "../../assets/uparrow.png";
 import downArrow from "../../assets/downarrow.png";
@@ -41,7 +41,6 @@ const Favourites = () => {
     let allgenre = fav.map((movie) => genreIds[movie.genre_ids[0]]);
     allgenre = new Set(allgenre);
     setGenre(["All Genre", ...allgenre]);
-    console.log(allgenre);
   }, [fav]);
 
   // localstorage
